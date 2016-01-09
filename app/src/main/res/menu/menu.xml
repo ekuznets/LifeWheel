@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/add_element"
+        android:visible="true"
+        android:alphabeticShortcut="u"
+        android:enabled="true"
+        android:titleCondensed="Add element to graph"
+        android:title="Add element to graph" />
+
+    <item android:id="@+id/delete"
+        android:visible="true"
+        android:alphabeticShortcut="u"
+        android:enabled="true"
+        android:titleCondensed="About this app"
+        android:title="Delete all (caution)" />
+
+    <item android:id="@+id/about"
+        android:visible="true"
+        android:alphabeticShortcut="u"
+        android:enabled="true"
+        android:titleCondensed="About this app"
+        android:title="About this app" />
+</menu>

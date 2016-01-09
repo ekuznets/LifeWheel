@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.whell.evgeny.lifewhell2.AddActivity">
+
+    <!--Top text-->
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fill all the fields to add new element to the graph"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="20sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <!--Name of the activity-->
+    <TextView
+        android:id="@+id/textViewName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/description"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="43dp"
+        android:text="Item Name:"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/txtName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textViewName"
+        android:layout_alignRight="@+id/description"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_alignLeft="@+id/txtColor"
+        android:layout_alignStart="@+id/txtColor">
+        <requestFocus />
+    </EditText>
+
+    <!--Persentage value-->
+
+    <TextView
+        android:id="@+id/textViewValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textViewName"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="43dp"
+        android:text="Percentage Value:"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/txtValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textViewValue"
+        android:ems="3"
+        android:inputType="number"
+        android:layout_toRightOf="@+id/textViewValue"
+        android:layout_toEndOf="@+id/textViewValue">
+
+        <requestFocus />
+    </EditText>
+
+    <!--Description field-->
+    <TextView
+        android:id="@+id/textViewDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textViewValue"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="43dp"
+        android:text="Short description:"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/txtDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textViewDescription"
+        android:layout_alignRight="@+id/description"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:layout_toEndOf="@+id/textViewDescription"
+        android:layout_toRightOf="@+id/textViewDescription">
+        <requestFocus />
+    </EditText>
+
+    <!--Fav Color-->
+    <TextView
+        android:id="@+id/textViewColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textViewDescription"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="43dp"
+        android:text="Peak a Color:"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/txtColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textViewColor"
+        android:layout_alignRight="@+id/description"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_toRightOf="@+id/textViewColor"
+        android:layout_toEndOf="@+id/textViewColor">
+        <requestFocus />
+    </EditText>
+
+    <!--Add button-->
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add element"
+        android:layout_marginBottom="46dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/textViewColor"
+        android:layout_alignStart="@+id/textViewColor" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/wheelButton"
+        android:src="@drawable/wheelbutton"
+        android:nestedScrollingEnabled="false"
+        android:layout_alignRight="@+id/txtColor"
+        android:layout_alignEnd="@+id/txtColor"
+        android:layout_alignTop="@+id/textView"
+        android:layout_alignBottom="@+id/textView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Please select your color from color picker by pressing a button or you can add color manually by providing value in range 0(white) to 16777216(black)"
+        android:id="@+id/textView"
+        android:layout_alignLeft="@+id/btnAdd"
+        android:layout_alignStart="@+id/btnAdd"
+        android:layout_above="@+id/btnAdd"
+        android:layout_alignRight="@+id/txtValue"
+        android:layout_alignEnd="@+id/txtValue" />
+
+</RelativeLayout>
