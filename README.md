@@ -14,5 +14,5 @@ Edit entry in the graph feature.
 Remove 1 entry at a time.
 Expand database for additional colomns.
 Optimise coloring.
-
+I will add more shit here!
 Fork to contribute!
